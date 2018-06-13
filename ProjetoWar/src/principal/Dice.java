@@ -4,7 +4,10 @@ import java.util.Random;
 
 public class Dice{
     Random dice;//dados
-    
+    /**
+    *Dado usado na batalha
+    *
+    */
     public Dice(){
         
         dice = new Random();
