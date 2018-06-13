@@ -10,7 +10,7 @@ public class Dice{
     Random dice;//dados
     
     /**
-     * Retorna numeros aleatorios que o jogador e soldados precisa.
+     * Retorna um inteiro aleatorios que os jogadores e soldados precisa.
      */
     public Dice(){
         
@@ -19,7 +19,6 @@ public class Dice{
     }
     
     /**
-     * 
      * @return Retorna um inteiro de 0 a 6 
      */
     public int playDice(){ 
@@ -27,12 +26,11 @@ public class Dice{
         return dice.nextInt(6) + 1; 
     }
     /**
-     * 
-     * @param Recebe um inteiro que o valor maximo que pode ser retornado
-     * @return Retorna um inteiro entre 0 e o valor passado como parametro
+     * Retorna um numero aleatorio entre 0 e o valor recebido
+     * @param Recebe um inteiro
+     * @return Retorna um inteiro
      */
-    
-    //retorna um numeor aleatorio de 0 ate o valor pedido
+
     public int playsorte(int max) {
     	return dice.nextInt(max);
     }
