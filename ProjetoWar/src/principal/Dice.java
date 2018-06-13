@@ -1,16 +1,27 @@
 package principal;
 
 import java.util.Random;
-
+/**
+ * 
+ * @author gilmar.resende
+ *
+ */
 public class Dice{
     Random dice;//dados
     
+    /**
+     * Retorna numeros aleatorios que o jogador e soldados precisa.
+     */
     public Dice(){
         
         dice = new Random();
         
     }
-    //retorna um numero aleatorio de 1 a 6
+    
+    /**
+     * 
+     * @return Retorna um inteiro de 0 a 6 
+     */
     public int playDice(){ 
     	
         return dice.nextInt(6) + 1; 
